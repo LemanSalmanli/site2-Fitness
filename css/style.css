@@ -1,0 +1,159 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+    --boz: #656e74;
+
+}
+header {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 60% 50%/cover;
+}
+nav, #title { 
+    width: 100%;
+    position: absolute;
+}
+nav { top: 40px }
+#title { bottom: 16vh; } 
+menu li a {
+    display: inline-block;
+    font: bold .8em 'Avenir Next Rounded', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 0 0 0
+}
+h1, h5 {
+    font-weight: 400;
+    font-family: 'Myriad Pro', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+h1 { font-size: 2em; }
+h2 {
+    font: 2em 'Open Sans';
+    text-transform: uppercase;
+}
+h3 {
+    font: 1.5em 'Open Sans';
+    padding: 20px 0;
+}
+h5 {font-size: 1em;
+    letter-spacing: 3px;
+}
+h6 {
+    font: 1em Montserrat;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bgyasil { background-color: var(--yasil) }
+.bgqirmizi { background-color: var(--qirmizi) }
+.bgag { background-color: #fff }
+.txtyasil { color: var(--yasil); font-weight: 300;}
+.txtqirmizi { color: var(--qirmizi) }
+.txtag { color: #fff }
+.txtboz{  color: var(--boz)}
+.height50 { min-height: 50vh; }
+.artpadding { padding: 50px 40px }
+.iconpad{ padding: 15px 0;}
+.alttext{   position: absolute; font-family: 'Open Sans', sans-serif;}
+#fitnessfirst .alttext{ bottom: 40px; right: 45px;}
+.alticon{ padding: 0  14px;  font-size: 25px;}
+#yourbody .alttext{ bottom: 45px; left: 50px;}
+#summeroffun p{ position: absolute; font-family: 'Open Sans', sans-serif; top: 60px;}
+.topleft{   left: 60px;}
+.topright{ right: 60px;}
+.fa-tag{ padding-left: 10px;}
+.posrel{ position: relative;}
+.bozicon{ color: #e0e6e6;}
+.fa-user, .fa-apple-whole, .fa-temperature-empty{ position: absolute; top: 55px; right: 40px; font-size: 2em;}
+.pad35{ padding: 35px 0;}
+#art4 { padding: 70px 0 }
+#art4 .col25 { padding: 35px 10px }
+#art4 .col25 i { font-size: 2.8em }
+#art4 .col25 p, #art4 .col25 a {  
+    font: .8em/1.5 'Proxima Nova';
+    padding: 10px 0;
+}
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover; position: relative; }
+#yourbody { background: url('../img/yourbody.jpg') center/cover; position: relative;}
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover;}
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover; position: relative;}
+#grape { background: url('../img/grape.jpg') center/cover;}
+#mango { background: url('../img/mango.jpg') center/cover;}
+#leaders { background: url('../img/footer.jpg') center/cover; height: 100vh; overflow: hidden; }
+#leadertext { position: absolute; top: 200px; left: 50%; transform: translate(-50%,-50%); text-align: center; }
+#leadertext h3{ font-size: 2.2em; margin-top: 10px;}
+#redfoot { position: absolute; bottom: -30px; left: -120px;}
+#redline{   height: 50px; width: 100%; background-color: var(--qirmizi); position: absolute; bottom: 0;}
+.centertext{ text-align: center;}
+.bgyasil, .bgqirmizi{
+    line-height: 26px;
+}
+footer{ height: 100vh; background-color: #0c1119; padding: 50px; overflow: hidden;}
+#footertext p { 
+    padding: 30px 0;
+    font-size: .9em, "Open Sans";
+    line-height: 24px;
+    color: #8297a7;
+    max-width: 300px;
+}
+#footertext{display: flex; gap: 40px; padding: 20px 90px; flex-wrap: wrap; justify-content: center; flex: 1;}
+
+#footicon{display: flex; gap: 15px; padding: 30px 0;}
+#footicon .fa-brands{
+    border-radius: 50%;
+    padding: 16px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+#footicon  .fa-facebook-f { background-color: #2e3092;}
+#footicon .fa-twitter { background-color: #00adef;}
+#footicon .fa-youtube { background-color: #ed3123;}
+#footicon .fa-linkedin-in { background-color: #16198f;}
+
+#footform { display: none;}
+#footform input, #join { height: 35px; padding: 7px 10px; border: none; border-radius: 5px;}
+#join {background-color: var(--yasil); }
+@media only screen and (min-width: 768px) {
+    header { text-align: initial; }
+    nav { padding: 0 50px; }
+    menu { 
+        float: right; 
+    }
+    menu li { 
+        display: inline-block; 
+        padding: 0 2vw;
+    }
+    #title { 
+        width: initial;
+        text-align: right; 
+        left: 110px;
+    }
+    h1 { font-size: 2.5em }
+    h2 { font-size: 2.2em }
+    h5 { padding: 15px 20px 0 0 }
+
+    .container { 
+        max-width: 1180px;
+        margin: auto;
+    }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .fleft { float: left}
+    .fright { float: right}
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    
+    #footform{ float: right;}
+    #footform { display: flex; flex-wrap: wrap; gap: 5px; padding: 0 110px;}
+
+
+}
